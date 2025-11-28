@@ -1,0 +1,39 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "baml",
+      "camelcase": "Baml",
+      "title": "Baml",
+      "scope": "source.baml",
+      "file-types": [
+        "baml"
+      ],
+      "injection-regex": "^baml$",
+      "class-name": "TreeSitterBaml"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "Grammar for syntax highlighting for the BAML language.",
+    "authors": [
+      {
+        "name": "Sylvain Hellin",
+        "email": "sylvain.hellin@tum.de"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/sylvainHellin/tree-sitter-baml.git"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}
